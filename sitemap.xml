@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.hiles.cn/posts/d607e27b.html</loc>
+    
+    <lastmod>2022-09-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hiles.cn/posts/4ebad2d4.html</loc>
     
     <lastmod>2022-09-07</lastmod>
@@ -49,22 +58,22 @@
 
   <url>
     <loc>https://blog.hiles.cn/</loc>
-    <lastmod>2022-09-07</lastmod>
+    <lastmod>2022-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://blog.hiles.cn/tags/java/</loc>
-    <lastmod>2022-09-07</lastmod>
+    <loc>https://blog.hiles.cn/tags/java-springboot-redis/</loc>
+    <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hiles.cn/tags/java-springboot-redis/</loc>
-    <lastmod>2022-09-07</lastmod>
+    <loc>https://blog.hiles.cn/tags/java/</loc>
+    <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -73,7 +82,7 @@
   
   <url>
     <loc>https://blog.hiles.cn/categories/%E5%90%8E%E5%8F%B0%E6%88%90%E9%95%BF%E5%8E%86%E7%A8%8B/</loc>
-    <lastmod>2022-09-07</lastmod>
+    <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

@@ -6,7 +6,7 @@
   <link href="https://blog.hiles.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.hiles.cn/"/>
-  <updated>2022-09-07T14:07:41.881Z</updated>
+  <updated>2022-09-08T13:46:22.195Z</updated>
   <id>https://blog.hiles.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring基础</title>
+    <link href="https://blog.hiles.cn/posts/d607e27b.html"/>
+    <id>https://blog.hiles.cn/posts/d607e27b.html</id>
+    <published>2022-09-08T13:22:32.000Z</published>
+    <updated>2022-09-08T13:46:22.195Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Spring基础"><a href="#Spring基础" class="headerlink" title="Spring基础"></a>Spring基础</h1><h2 id="Spring系统架构"><a href="#Spring系统架构" class="headerlink" title="Spring系统架构"></a>Spring系统架构</h2><ul><li><p>Spring Framework是Spring生态圈中最基础的项目，是其他项目的根基。</p></li><li><p>Spring Framework的发展也经历了很多版本的变更，每个版本都有相应的调整<br><img src="http://img.hiles.cn/image-20210729172153796.png" alt="image-20210729172153796"></p></li><li>Spring Framework 4的版本的系统结构图<br><img src="http://img.hiles.cn/1629720945720.png" alt="1629720945720"></li></ul><p>(1)核心层</p><ul><li>Core Container:核心容器，这个模块是Spring最核心的模块，其他的都需要依赖该模块</li></ul><p>(2)AOP层</p><ul><li>AOP:面向切面编程，它依赖核心层容器，目的是==在不改变原有代码的前提下对其进行功能增强==</li><li>Aspects:AOP是思想,Aspects是对AOP思想的具体实现</li></ul><p>(3)数据层</p><ul><li>Data Access:数据访问，Spring全家桶中有对数据访问的具体实现技术</li><li>Data Integration:数据集成，Spring支持整合其他的数据层解决方案，比如Mybatis</li><li>Transactions:事务，Spring中事务管理是Spring AOP的一个具体实现，也是后期学习的重点内容</li></ul><p>(4)Web层</p><ul><li>SpringMVC</li></ul><p>(5)Test层</p><ul><li>Spring主要整合了Junit来完成单元测试和集成测试</li></ul>]]></content>
+    
+    
+    <summary type="html">Spring基础</summary>
+    
+    
+    
+    <category term="后台成长历程" scheme="https://blog.hiles.cn/categories/%E5%90%8E%E5%8F%B0%E6%88%90%E9%95%BF%E5%8E%86%E7%A8%8B/"/>
+    
+    
+    <category term="java, springboot,redis" scheme="https://blog.hiles.cn/tags/java-springboot-redis/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot整合Redis</title>
