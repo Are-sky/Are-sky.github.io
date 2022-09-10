@@ -6,7 +6,7 @@
   <link href="https://blog.hiles.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.hiles.cn/"/>
-  <updated>2022-09-08T14:00:33.276Z</updated>
+  <updated>2022-09-10T08:12:46.854Z</updated>
   <id>https://blog.hiles.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>夜月集</title>
+    <link href="https://blog.hiles.cn/posts/5c9c1785.html"/>
+    <id>https://blog.hiles.cn/posts/5c9c1785.html</id>
+    <published>2022-09-10T07:17:07.000Z</published>
+    <updated>2022-09-10T08:12:46.854Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="闲暇时间写的小诗"><a href="#闲暇时间写的小诗" class="headerlink" title="闲暇时间写的小诗"></a>闲暇时间写的小诗</h1><h2 id="第一首"><a href="#第一首" class="headerlink" title="第一首"></a>第一首</h2><p class='p cyan'>在高中，一个舒服的午睡中，做了个梦，然后就自然而然地写出了下面的这首~</p><div class='poem'><div class='poem-title'>无题</div><div class='poem-author'>昼阳</div><p>斜风细雨映琉璃，<br>茉莉香缕小径西。<br>桥畔绮琴轻蝶舞，<br>梨窝浅笑百莺啼。</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;闲暇时间写的小诗&quot;&gt;&lt;a href=&quot;#闲暇时间写的小诗&quot; class=&quot;headerlink&quot; title=&quot;闲暇时间写的小诗&quot;&gt;&lt;/a&gt;闲暇时间写的小诗&lt;/h1&gt;&lt;h2 id=&quot;第一首&quot;&gt;&lt;a href=&quot;#第一首&quot; class=&quot;headerlink&quot; ti</summary>
+      
+    
+    
+    
+    <category term="诗词歌赋" scheme="https://blog.hiles.cn/categories/%E8%AF%97%E8%AF%8D%E6%AD%8C%E8%B5%8B/"/>
+    
+    
+    <category term="诗集" scheme="https://blog.hiles.cn/tags/%E8%AF%97%E9%9B%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring基础</title>
