@@ -6,7 +6,7 @@
   <link href="https://blog.hiles.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.hiles.cn/"/>
-  <updated>2022-09-25T13:48:26.840Z</updated>
+  <updated>2023-03-11T08:48:10.308Z</updated>
   <id>https://blog.hiles.cn/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql笔记</title>
+    <link href="https://blog.hiles.cn/posts/49658f74.html"/>
+    <id>https://blog.hiles.cn/posts/49658f74.html</id>
+    <published>2023-03-11T08:48:10.000Z</published>
+    <updated>2023-03-11T08:48:10.308Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>WebSocket笔记</title>
