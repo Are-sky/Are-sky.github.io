@@ -6,7 +6,7 @@
   <link href="https://blog.hiles.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.hiles.cn/"/>
-  <updated>2023-04-03T13:26:50.076Z</updated>
+  <updated>2023-04-11T07:14:58.239Z</updated>
   <id>https://blog.hiles.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java并发</title>
+    <link href="https://blog.hiles.cn/posts/918971b1.html"/>
+    <id>https://blog.hiles.cn/posts/918971b1.html</id>
+    <published>2023-04-11T05:13:50.000Z</published>
+    <updated>2023-04-11T07:14:58.239Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="并发编程基础"><a href="#并发编程基础" class="headerlink" title="并发编程基础"></a>并发编程基础</h1><h2 id="什么是共享资源"><a href="#什么是共享资源" class="headerlink" title="什么是共享资源"></a>什么是共享资源</h2><p>堆是被所有线程共享的一块区域，在虚拟机启动时创建。此区域的唯一目的就是存放对象实例，Java中几乎所有的对象实例都在这里分配内存。</p><p>方法区与堆区一样，也是每个线程共享的一块内存区域，它用于存储已被虚拟机加载的类型信息、常量、静态变量、即时编译器编译后的代码缓存等数据。</p><p>栈中数据是私有的，是线程隔离的。<br><img src="https://img.hiles.cn/Snipaste_2023-04-11_13-42-56.png" alt="alt text"></p><h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><ol><li>原子性问题</li></ol><ul><li>操作系统做任务切换，可以发生在任何一条CPU指令执行完成之后。</li><li>CPU能保证的原子操作是指令级别的，而不是高级语言的操作符。<br><img src="https://img.hiles.cn/20230411135846.png" alt="alt text"></li></ul><ol><li>可见性问题</li></ol><ul><li>可见性是指一个线程对共享变量的修改，另外一个线程能够立刻看到。</li><li>可见性问题是由CPU的缓存导致的，多核CPU均有各自的缓存，这些缓存均要与内存同步。<br><img src="https://img.hiles.cn/20230411140930.png" alt="alt text"></li></ul><ol><li>有序性</li></ol><ul><li>在执行程序时，为了提高性能，编译器和处理器常常会对指令进行重排序。</li><li>重排序不会影响单线程的执行结果，但在并发的情况下，可能会出现诡异的bug。<br><img src="https://img.hiles.cn/20230411142212.png" alt="alt text"><h2 id="Java-Memory-Model"><a href="#Java-Memory-Model" class="headerlink" title="Java Memory Model"></a>Java Memory Model</h2></li></ul><ol><li>并发编程的关键目标</li></ol><p>并发编程需要解决两个问题：线程之间如何通信和同步</p><ul><li>通信：线程之间以何种机制交换信息</li><li>同步：程序中用于控制不同线程之间的操作发生的相对顺序机制</li></ul><ol><li>并发编程的内存模型</li></ol><p>共有两种并发编程模型：共享内存模型、信息传递型，Java采用的是前者。</p><ul><li>在共享内存模型下，线程之间共享程序的公共状态，通过写-读内存中的公共状态进行隐式通信。</li><li>在共享内存模型下，同步是显式进行的，程序员必须显式指定某段代码需要在线程之间互斥执行。</li></ul><ol><li>JMM<br>JMM是Java Memory Model的缩写，Java线程之间的通信是由JMM控制，即JMM决定一个线程对共享变量的写入何时对另一个线程可见。JMM定义了线程和主内存之间的抽象关系，通过控制主内存与每个本地内存（抽象概念）之间的交互，JMM为Java程序员提供了内存可见性的保证。<br><img src="https://img.hiles.cn/20230411145133.png" alt="alt text"><br>4.源代码与指令间的重排序</li></ol><p>为了提高性能，编译器和处理器常常会对指令做重排序。重排序有3种类型，其中后2种都是处理器重排序。这些重排序可能会导致多线程程序出现内存可见性问题。</p><ul><li>1.编译器优化重排序:编译器在不改变单线程程序语义的前提下，可以重新安排语句的执行顺序。</li><li>2.指令级并行重排序:现代处理器采用了指令级并行技术来将多条指令重叠执行，如果不存在数据依赖性，处理器可以改变语句对应机器指令的执行顺序。</li><li>3.内存系统的重排序:由于处理器使用缓存和读/写缓冲区，这使得加载和存储操作看上去可能是在乱序执行。</li></ul><p><img src="https://img.hiles.cn/20230411145854.png" alt="alt text"><br>5.重排序对可见性的影响<br> 参考下表，虽然处理器执行的顺序</p><h1 id="原子类"><a href="#原子类" class="headerlink" title="原子类"></a>原子类</h1><h1 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h1><h1 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h1><h1 id="并发工具"><a href="#并发工具" class="headerlink" title="并发工具"></a>并发工具</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;并发编程基础&quot;&gt;&lt;a href=&quot;#并发编程基础&quot; class=&quot;headerlink&quot; title=&quot;并发编程基础&quot;&gt;&lt;/a&gt;并发编程基础&lt;/h1&gt;&lt;h2 id=&quot;什么是共享资源&quot;&gt;&lt;a href=&quot;#什么是共享资源&quot; class=&quot;headerlink&quot; ti</summary>
+      
+    
+    
+    
+    <category term="后台成长历程" scheme="https://blog.hiles.cn/categories/%E5%90%8E%E5%8F%B0%E6%88%90%E9%95%BF%E5%8E%86%E7%A8%8B/"/>
+    
+    
+    <category term="java" scheme="https://blog.hiles.cn/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>计网</title>
